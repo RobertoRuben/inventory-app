@@ -17,6 +17,8 @@ class PositionResource extends Resource
 {
     protected static ?string $model = Position::class;
 
+    protected static ?string $navigationGroup = 'Company';
+
     protected static ?string $navigationIcon = 'css-work-alt';
 
     public static function form(Form $form): Form

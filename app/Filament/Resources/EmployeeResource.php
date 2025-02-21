@@ -17,6 +17,8 @@ class EmployeeResource extends Resource
 {
     protected static ?string $model = Employee::class;
 
+    protected static ?string $navigationGroup = 'Company';
+
     protected static ?string $navigationIcon = 'clarity-employee-group-line';
 
     public static function form(Form $form): Form
